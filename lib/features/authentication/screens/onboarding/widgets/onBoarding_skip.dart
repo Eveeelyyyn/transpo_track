@@ -3,7 +3,6 @@ import 'package:transpo_track/features/authentication/controllers/onboarding/onb
 import 'package:transpo_track/utils/constants/sizes.dart';
 import 'package:transpo_track/utils/device/device_utility.dart';
 
-
 class OnBoardingSkip extends StatelessWidget {
   const OnBoardingSkip({
     super.key,
