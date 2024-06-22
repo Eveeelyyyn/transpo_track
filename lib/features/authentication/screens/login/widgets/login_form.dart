@@ -28,7 +28,7 @@ class _TLoginFormState extends State<TLoginForm> {
         );
         Get.offAll(() => const NavigationMenu());
       } on FirebaseAuthException catch (e) {
-        Get.snackbar('Error', e.message ?? 'Unknown error occurred');
+        Get.snackbar('Error', e.message ?? 'Se produjo un error');
       }
     }
   }
@@ -42,7 +42,7 @@ class _TLoginFormState extends State<TLoginForm> {
             const EdgeInsets.symmetric(vertical: TSizes.spaceBetweenSections),
         child: Column(
           children: [
-            //Email
+            //Correo electrónico
             TextFormField(
               controller: _emailController,
               decoration: const InputDecoration(
@@ -50,14 +50,14 @@ class _TLoginFormState extends State<TLoginForm> {
                   labelText: TTexts.email),
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your email';
+                  return 'Introduzca su correo electrónico';
                 }
                 return null;
               },
             ),
             const SizedBox(height: TSizes.spaceBetweenInputFields),
 
-            //Password
+            //contraseña
             TextFormField(
               controller: _passwordController,
               decoration: const InputDecoration(
@@ -68,32 +68,31 @@ class _TLoginFormState extends State<TLoginForm> {
               obscureText: true,
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your password';
+                  return 'Introduzca su contraseña';
                 }
                 return null;
               },
             ),
             const SizedBox(height: TSizes.spaceBetweenInputFields / 2),
 
-            // Remember Me & Forget Password
+            // Recordarme y olvidar contraseña
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Remember me
                 Row(
                   children: [
                     Checkbox(value: true, onChanged: (value) {}),
                     const Text(TTexts.rememberMe),
                   ],
                 ),
-                // Forget Password
+                // Contraseña olvidada
                 TextButton(
                     onPressed: () {}, child: const Text(TTexts.forgetPassword)),
               ],
             ),
             const SizedBox(height: TSizes.spaceBetweenItems),
 
-            // Sign In Button
+            // Botón Iniciar sesión
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
@@ -103,7 +102,7 @@ class _TLoginFormState extends State<TLoginForm> {
             ),
             const SizedBox(height: TSizes.spaceBetweenItems),
 
-            // Create Account Button
+            // Botón Crear cuenta
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
