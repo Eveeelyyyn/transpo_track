@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "173389417987",
+    "project_id": "fir-flutter-63eae",
+    "storage_bucket": "fir-flutter-63eae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173389417987:android:c5874083bc040d8bda4836",
+        "android_client_info": {
+          "package_name": "com.example.transpo_track"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcj6IC9EeEsJdj-UTRhJVkY9oLMFgCH24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

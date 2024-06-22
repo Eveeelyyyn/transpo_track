@@ -1,15 +1,13 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:transpo_track/app.dart';
+import 'package:transpo_track/firebase_options.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
-  // Todo: Add Widgest binding
-  // Todo: Init Local Storage
-  // Todo Await Native Splash
-  // Todo: Initialize Firebasep'
-  // Todo: Initialize Authentication
-  
   runApp(const App());
 }
-
-

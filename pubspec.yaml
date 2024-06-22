@@ -25,12 +25,20 @@ dependencies:
 
 
   # Icons
-  iconsax: ^0.0.8
+  #iconsax: ^0.0.8
   cupertino_icons: ^1.0.6
 
-  # State Management
+  firebase_core: ^2.7.0
+  firebase_auth: ^4.2.4
   get: ^4.6.5
+  iconsax: ^0.0.1
+
+  # State Management
+  #get: ^4.6.5
   get_storage: ^2.1.1
+  #firebase_core: ^3.1.0
+  #firebase_auth: ^5.1.0
+
 
   # Product Specific
 
@@ -53,7 +61,7 @@ flutter:
 
   assets:
     - assets/logos/
-    - assets/icons/brands/
+    # assets/icons/brands/
     - assets/images/on_boarding_images/
     - assets/images/banners/
     - assets/icons/categories/

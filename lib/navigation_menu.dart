@@ -21,13 +21,17 @@ class NavigationMenu extends StatelessWidget {
           height: 80,
           elevation: 0,
           selectedIndex: controller.selectedIndex.value,
-          onDestinationSelected: (index) => controller.selectedIndex.value = index,
-          backgroundColor: darkMode ? TColors.black: Colors.white,
-          indicatorColor: darkMode ? TColors.white.withOpacity(0.1): TColors.black.withOpacity(0.1),
+          onDestinationSelected: (index) =>
+              controller.selectedIndex.value = index,
+          backgroundColor: darkMode ? TColors.black : Colors.white,
+          indicatorColor: darkMode
+              ? TColors.white.withOpacity(0.1)
+              : TColors.black.withOpacity(0.1),
           destinations: const [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Inicio'),
             NavigationDestination(icon: Icon(Iconsax.car), label: 'Flete'),
-            NavigationDestination(icon: Icon(Iconsax.receipt_edit), label: 'Reporte'),
+            NavigationDestination(
+                icon: Icon(Iconsax.receipt_edit), label: 'Reporte'),
             NavigationDestination(icon: Icon(Iconsax.user), label: 'Perfil'),
           ],
         ),
